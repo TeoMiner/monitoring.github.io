@@ -6,7 +6,7 @@
     <title>Hệ thống giám sát</title>
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <script>
-        const client = mqtt.connect('wss://broker.hivemq.com:8000/mqtt')
+        const client = mqtt.connect('wss://broker.hivemq.com:8884/mqtt')
         client.on('connect', () => {
             console.log('Da ket noi toi esp')
             client.subscribe('Nhietdo')
