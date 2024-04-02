@@ -12,6 +12,7 @@
             client.subscribe('Nhietdo')
             client.subscribe('Doam')
             client.subscribe('Cua')
+            client.subcribe('reset)
         })
         client.on('message', (topic, message) => {
             if(topic == 'Nhietdo') 
@@ -28,6 +29,10 @@
             {
                 document.getElementById('door').textContent = message
                 console.log(message.toString())
+            }
+            if(topic == 'reset') 
+            {
+                location.reload();
             }
         })
     </script>
