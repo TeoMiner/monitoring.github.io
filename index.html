@@ -32,7 +32,12 @@
             }
             if(topic == 'reset') 
             {
-                location.reload();
+                if(message == "ok") 
+                {
+                    console.clear()
+                    console.log('ESP reset')
+                    location.reload()
+                }
             }
         })
     </script>
@@ -52,7 +57,7 @@
         var output = document.getElementById("giatri")
         let val = 0;
         output.innerHTML = slider.value
-        slider.oninput = function()
+        slider.onmouseup = function()
         {
           output.innerHTML = this.value
           //console.log(this.value.toString())
