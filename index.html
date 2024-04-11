@@ -54,6 +54,10 @@
                     client.publish('giatringuong',this.value.toString())
                     //client.publish('giatringuong',this.value.toString())
                 }
+                slider.onmouseup = function()
+                {
+                    client.publish('giatringuong',this.value.toString())
+                }
             </script>
         </div>
     </p>
