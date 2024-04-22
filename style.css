@@ -1,14 +1,17 @@
-html {
+html 
+{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
     
 }
-body{
+body
+{
     background-color: #1e3459;
 }
-.header {
+.header 
+{
     width: 100%;
     height: 100px;
     margin: auto;
@@ -17,9 +20,29 @@ body{
     line-height: 100px;
     color: white;
 }
-.box {
-    width: 300px;
-    height: 200px;
+.container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.charts-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 130px;
+}
+.chart-container
+{
+    width: 800px;
+    height: 400px;
+    display: block;
+}
+.box 
+{
+    width: 400px;
+    height: 300px;
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
@@ -32,17 +55,19 @@ body{
 }
 #bloc1, #bloc2, #bloc3
 {
-    display:inline-block;
+    display:block;
 }
-hienthi{
+hienthi
+{
     display: inline-block;
-    padding-top: 26px;
-    font-size: 40px;
+    padding-top: 45px;
+    font-size: 57px;
 }
-img {
+img 
+{
     float: left;
     display: block;
     width: 100px; height: 100px;
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-left: 30px;
+    margin-top: 85px;
 }
