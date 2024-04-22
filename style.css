@@ -38,6 +38,7 @@ body
     width: 800px;
     height: 400px;
     display: block;
+    padding-bottom: 50px;
 }
 .box 
 {
